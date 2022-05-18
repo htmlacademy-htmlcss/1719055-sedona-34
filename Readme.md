@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Anna Parasyuta](https://up.htmlacademy.ru/htmlcss/34/user/1719055).
-* Наставник: `Неизвестно`.
+- Студент: [Anna Parasyuta](https://up.htmlacademy.ru/htmlcss/34/user/1719055).
+- Наставник: [Ярослав Семенченко] (https://htmlacademy.ru/profile/4ubaka447).
 
 ---
 
