@@ -35,7 +35,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button navigation-link" href="#">Хочу сюда!</a>
+          <a class="button button-basic navigation-link" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -96,13 +96,13 @@
           </ul>
         </fieldset>
         <fieldset class="hotel-price-range">
-          <legend class="hotel-price-range-title">Стоимость, ₽:</legend>>
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>>
           <input class="hotel-price" type="text" value="" name="hotel-min-price" placeholder="0" />
           <input class="hotel-price" type="text" value="" name="hotel-max-price" placeholder="9000" />
         </fieldset>
       </form>
       <button class="button button-blue" type="submit">Применить</button>
-      <button class="button" type="submit">Сбросить</button>
+      <button class="button button-reset" type="submit">Сбросить</button>
     </section>
     <section class="search-results">
       <h2 class="visually-hidden">Результаты поиска</h2>
@@ -125,12 +125,14 @@
           </a>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">от 4000 ₽</p>
-          <a class="button button-brown" href="#">Подробнее</a>
+          <a class="button button-basic" href="#">Подробнее</a>
           <button class="button button-blue">В избранное</button>
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
+          <ul class="hotel-rating">
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+          </ul>
           <p class="hotel-rating">Рейтинг: 8,5</p>
         </li>
         <li class="hotel-card">
@@ -142,12 +144,14 @@
           </a>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">от 5000 ₽</p>
-          <a class="button button-brown" href="#">Подробнее</a>
+          <a class="button button-basic" href="#">Подробнее</a>
           <button class="button button-blue">В избранное</button>
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
+          <ul class="hotel-rating">
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+          </ul>
           <p class="hotel-rating">Рейтинг: 9,2</p>
         </li>
         <li class="hotel-card">
@@ -159,11 +163,13 @@
           </a>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">от 2500 ₽</p>
-          <a class="button button-brown" href="#">Подробнее</a>
+          <a class="button button-basic" href="#">Подробнее</a>
           <button class="button button-blue">В избранное</button>
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
+          <ul class="hotel-rating">
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+          </ul>
           <p class="hotel-rating">Рейтинг: 6,9</p>
         </li>
         <li class="hotel-card">
@@ -174,10 +180,12 @@
           </a>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">от 1500 ₽</p>
-          <a class="button button-brown" href="#">Подробнее</a>
+          <a class="button button-basic" href="#">Подробнее</a>
           <button class="button button-blue">В избранное</button>
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
-          <img class="stars-rating" src="images/star.svg" alt="stars" />
+          <ul class="hotel-rating">
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+            <li class="hotel-rating-star"><img class="stars-rating" src="images/star.svg" alt="stars" /></li>
+          </ul>
           <p class="hotel-rating">Рейтинг: 5,0</p>
         </li>
       </ul>
@@ -210,9 +218,9 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="newsletter-index">
-      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-      <p class="page-footer-text">
+    <section class="newsletter-catalog">
+      <h2 class="catalog-footer-title">Подпишитесь на рассылку</h2>
+      <p class="catalog-footer-text">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form class="newsletter-form" action="#" method="post">
@@ -241,11 +249,13 @@
     </section>
     <section class="telephone">
       <h2 class="visually-hidden">Номер телефона</h2>
-      <address class="telephone-number">+7 (812) 812-12-12</address>
+      <address class="telephone-contact">
+        <a class="telephone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
+      </address>
     </section>
     <section class="logo">
-      <h2 class="visually-hidden"> Логотип</h2>
-      <img class="footer-logo" src="images/Academy_logo.svg" height="33px" width="115px" alt="HTML Academy логотип" />
+      <h2 class="visually-hidden">Логотип</h2>
+      <img class="logo-footer" src="images/Academy_logo.svg" height="33px" width="115px" alt="HTML Academy логотип" />
     </section>
   </footer>
 </body>

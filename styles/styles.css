@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+body  {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #E5E5E5;
+}
+.visually-hidden {
+  display: none;
+}
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  text-align: center;
+}
+.button {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button-basic {
+  background-color: #756157;
+  font-size: 16px;
+  line-height: 20px;
+}
+.about {
+  background-image: url("../images/background-images/index-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+}
+.introduction {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.reasons {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+.advantages-list {
+  text-align: center;
+  list-style: none;
+}
+.advantages-item {
+  background-color: #F0F6FA;
+}
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.advantages-photo-sedona {
+  background-image: url("../images/background-images/advatnages_photo_1.jpeg");
+  background-repeat: no-repeat;
+}
+.advantages-photo-canyon {
+  background-image: url("../images/background-images/advantages_photo_2.jpeg");
+  background-repeat: no-repeat;
+}
+.advantages-item-photo {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+.hotel-search {
+  background-color: #ffffff;
+  text-align: center;
+}
+.search-question {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.page-footer {
+  text-align: center;
+  background-color: #ffffff;
+}
+.newsletter-index {
+  background-image: url("../images/background-images/background_blured.jpeg");
+  background-color: #82B3D3;
+  background-repeat: no-repeat;
+}
+.page-footer-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.page-footer-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.telephone-contact {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+}
+.telephone a {
+  text-decoration: none;
+  color: #000000;
+}
+.catalog, .catalog-filter {
+  color: #ffffff;
+}
+.catalog {
+  background-image: url("../images/background-images/background_blured_catalog.jpeg");
+  background-repeat: no-repeat;
+}
+.catalog-title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 78px;
+  text-align: left;
+}
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.found-hotels {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.button-reset {
+  font-size: 16px;
+  line-height: 20px;
+}
+.hotel-card-name {
+  font-weight: Bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.hotel-card-link {
+  text-decoration: none;
+}
+.newsletter-catalog {
+  background-color: #ffffff;
+  color: #000000;
+}
