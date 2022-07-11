@@ -5,14 +5,15 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="../1719055-sedona-34/favicon.ico">
   </head>
 
   <body>
     <div class="page-container">
       <header class="page-header">
         <nav class="navigation">
-          <span class="navigation-logo" href="#">
-            <img class="page-header-logo" src="images/logo.svg" height="70px" width="139px" alt="Логотип Седона" />
+          <span class="navigation-logo">
+            <img class="page-header-logo" src="images/logo.svg" height="70px" width="139px" alt="Логотип Седона." />
           </span>
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-main">Главная</li>
@@ -56,7 +57,7 @@
         <section class="about">
           <h1 class="visually-hidden">Sedona</h1>
           <img class="main-logo" src="images/welcome_logo.svg" height="352px" width="458px"
-            alt="Welcome to the gorgeous Sedona" />
+            alt="Welcome to the gorgeous Sedona." />
           <div class="about-container">
             <h2 class="visually-hidden">Про Седону</h2>
             <p class="introduction">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -127,8 +128,8 @@
           <h2 class="visually-hidden">Поиск отеля</h2>
           <p class="search-question">Заинтересовались?</p>
           <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
-            гостиниц в Седоне<br></p>
-          <a class="button button-hotel-search" href="catalog.html">Поиск гостиницы в Седоне</a>
+            гостиниц в Седоне</p>
+          <a class="button button-hotel-search" href="#modal-window">Поиск гостиницы в Седоне</a>
         </section>
       </main>
       <footer class="page-footer">
@@ -195,6 +196,51 @@
           </section>
         </div>
       </footer>
+    </div>
+    <div id="modal-window" class="modal-container">
+      <div class="modal modal-hotel-search">
+        <section class="modal-content">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="form-title arrival" for="modal-arrival">Дата Заезда:</label>
+              <input class="modal-arrival-field modal-date-field modal-field" type="text" id="modal-arrival"
+                name="modal-arrival" placeholder="27 апреля 2020">
+            </p>
+            <p class="modal-warning">Мы не можем отправить вас в прошлое</p>
+            <p class="field-group">
+              <label class="form-title departure" for="modal-departure">Дата Выезда:</label>
+              <input class="modal-departure-field modal-date-field modal-field" type="text" id="auth-password"
+                name="auth-password" placeholder="1 сентября 2021">
+            </p>
+            <p class="modal-warning-positive">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="modal-travellers">
+              <p class="field-group">
+                <label class="form-title adults" for="modal-adults">Взрослые:</label>
+                <input class="modal-adults-field modal-person-field modal-field" type="text" id="modal-adults"
+                  name="modal-adults" placeholder="2">
+              </p>
+              <p class="field-group">
+                <label class="form-title children" for="modal-children">Дети:</label>
+                <span class="info-popover"></span>
+                <!-- <div class="popover">
+
+                <div class="popover-content">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
+                </div>
+              </div> -->
+                <input class="modal-children-field modal-person-field modal-field" type="text" id="modal-children"
+                  name="modal-children" placeholder="1">
+              </p>
+            </div>
+            <button class="button modal-search-button">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
