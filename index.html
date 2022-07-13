@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="styles/styles.css">
   <title>HTML Academy: Седона</title>
-  <link rel="icon" href="../1719055-sedona-34/favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
@@ -91,8 +91,7 @@
           <li class="advantages-item">
             <div class="advantages-item-text-sublist">
               <h3 class="advantages-title souvenir">Сувениры</h3>
-              <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!
-              </p>
+              <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </div>
           </li>
           <li class="advantages-item advantages-item-photo-canyon">
@@ -137,7 +136,7 @@
       <section class="newsletter-index">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="page-footer-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
-        <form class="newsletter-form" action="#" method="post">
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
           <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email"
             required />
@@ -203,7 +202,7 @@
     <div id="modal-window" class="modal-container">
       <div class="modal modal-hotel-search">
         <section class="modal-content">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -216,7 +215,7 @@
             <p class="modal-warning">Мы не можем отправить вас в прошлое</p>
             <p class="field-group">
               <label class="form-title departure" for="modal-departure">Дата Выезда:</label>
-              <input class="modal-departure-field modal-date-field modal-field" type="text" id="auth-password"
+              <input class="modal-departure-field modal-date-field modal-field" type="text" id="modal-departure"
                 name="modal-departure" placeholder="1 сентября 2021">
             </p>
             <p class="modal-warning-positive">На эти даты есть свободные номера. Пока есть.</p>
@@ -224,45 +223,50 @@
               <p class="field-group">
                 <label class="form-title adults" for="modal-adults">Взрослые:</label>
               <div class="modal-field-container field-adults">
-                <button class="modal-form-button button-minus"><svg class="minus-icon"
-                    xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1">
+                <button class="modal-form-button button-minus" type="button">
+                  <svg class="minus-icon" aria-label="Minus-icon." xmlns="http://www.w3.org/2000/svg" width="13"
+                    height="1" viewBox="0 0 13 1">
                     <path d="M0 0L0 1L13 1V0L0 0Z" />
-                  </svg></button>
+                  </svg>
+                </button>
                 <input class="modal-person-field modal-field" type="text" id="modal-adults" name="modal-adults"
                   placeholder="2">
-                <button class="modal-form-button button-plus"><svg class="minus-icon" xmlns="http://www.w3.org/2000/svg"
-                    width="13" height="13" viewBox="0 0 13 13">
+                <button class="modal-form-button button-plus" type="button">
+                  <svg class="plus-icon" aria-label="Plus-icon." xmlns="http://www.w3.org/2000/svg" width="13"
+                    height="13" viewBox="0 0 13 13">
                     <g>
                       <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                     </g>
-                  </svg></button>
+                  </svg>
+                </button>
               </div>
-              </p>
               <p class="field-group">
                 <label class="form-title children" for="modal-children">Дети:</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  </button>
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
                     с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
               <div class="modal-field-container">
-                <button class="modal-form-button button-minus"><svg class="minus-icon"
-                    xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1">
+                <button class="modal-form-button button-minus" type="button">
+                  <svg class="minus-icon" aria-label="Minus-icon." xmlns="http://www.w3.org/2000/svg" width="13"
+                    height="1" viewBox="0 0 13 1">
                     <path d="M0 0L0 1L13 1V0L0 0Z" />
-                  </svg></button>
+                  </svg>
+                </button>
                 <input class="modal-person-field modal-field" type="text" id="modal-children" name="modal-children"
                   placeholder="1">
-                <button class="modal-form-button button-plus"><svg class="plus-icon" xmlns="http://www.w3.org/2000/svg"
-                    width="13" height="13" viewBox="0 0 13 13">
+                <button class="modal-form-button button-plus" type="button">
+                  <svg class="plus-icon" aria-label="Plus-icon." xmlns="http://www.w3.org/2000/svg" width="13"
+                    height="13" viewBox="0 0 13 13">
                     <g>
                       <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                     </g>
-                  </svg></button>
+                  </svg>
+                </button>
               </div>
-              </p>
             </div>
-            <button class="button modal-search-button">Найти</button>
+            <button class="button modal-search-button" type="submit">Найти</button>
           </form>
         </section>
       </div>

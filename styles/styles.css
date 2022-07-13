@@ -283,7 +283,7 @@ body  {
   background-image: url("../images/background-images/index-background.jpeg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #82b3d3;
+  background-color: #68a2ca;
 }
 .main-logo {
   display: block;
@@ -528,6 +528,7 @@ body  {
 .footer-social-list {
   margin: 0;
   padding: 0;
+  max-width: 142px;
   list-style-type: none;
   color: #000000;
   display: -webkit-box;
@@ -818,6 +819,10 @@ body  {
           appearance: none;
   margin: 0;
 }
+.hotel-price {
+    -moz-appearance:textfield;
+}
+
 .hotel-min-price {
   border-radius: 4px 0 0 4px;
 }
@@ -919,8 +924,7 @@ body  {
 }
 .control-input[type="checkbox"]:focus + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83b3d3;
-  outline: 0;
+  outline: 3px solid #83b3d3;
 }
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
@@ -1024,6 +1028,7 @@ body  {
   font-size: 18px;
   font-family: inherit;
   line-height: 21px;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   -webkit-appearance: none;
@@ -1039,6 +1044,10 @@ body  {
           appearance: none;
   margin: 0;
 }
+.select-control {
+  -moz-appearance: none;
+}
+
 .select-control:hover,
 .select-control:focus {
   border-color: #68a2ca;
@@ -1060,6 +1069,7 @@ body  {
   font-size: 18px;
   font-family: inherit;
   line-height: 21px;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   margin-left: 52px;
@@ -1592,7 +1602,7 @@ body  {
 .plus-icon:hover {
   fill: #000000;
 }
-.button-minus:focus {
+.minus-icon:focus {
   fill: #000000;
   border: 3px solid #83b3d3;
   outline: none;
